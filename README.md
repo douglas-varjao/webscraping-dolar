@@ -7,7 +7,7 @@ Este projeto automatiza a coleta, processamento, análise e visualização das c
 ## Funcionalidades
 
 * **Coleta de Dados:** Obtém cotações de compra e venda do dólar diretamente da API do Banco Central para um período especificado.
-* **Tratamento de Dados:** Utiliza a biblioteca Pandas para limpar, formatar e organizar os dados [cite: 8, 11][cite_start], identificando também os dias sem cotação.
+* **Tratamento de Dados:** Utiliza a biblioteca Pandas para limpar, formatar e organizar os dados, identificando também os dias sem cotação.
 * **Geração de Relatórios Visuais:** Cria gráficos de linha que mostram a variação da cotação de compra e uma comparação entre compra e venda ao longo do tempo.
 * **Exportação de Dados:** Salva as cotações completas e os dias sem cotação em um arquivo Excel (`.xlsx`) com abas separadas.
 * **Exibição de Estatísticas:** Apresenta um resumo no terminal com as últimas cotações e estatísticas como média, máxima, mínima e volatilidade do dólar.

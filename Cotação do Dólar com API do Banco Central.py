@@ -12,7 +12,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 import os
 
-##"""Obtém cotações do dólar dos últimos N dias do Banco Central"""
+##Obtém cotações do dólar dos últimos N dias do Banco Central
 def get_dolar_quotes(days=30):
     
     try:
@@ -91,7 +91,7 @@ def get_dolar_quotes(days=30):
         print(f"Erro inesperado: {e}", file=sys.stderr)
         return pd.DataFrame(), pd.DataFrame()
 
-##"""Gera relatório com gráficos e retorna caminhos dos arquivos"""
+##Gera relatório com gráficos e retorna caminhos dos arquivos
 def generate_report(df_dolar, df_missing, output_dir):
 
     try:
@@ -131,13 +131,13 @@ def generate_report(df_dolar, df_missing, output_dir):
         print(f"Erro ao gerar gráficos: {e}", file=sys.stderr)
         return None, None
 
-## """Envia email com os resultados"""
+##Envia email com os resultados
 def send_email(receiver_email, subject, body, attachments=None):
 
     try:
         # Configurações - Edite com seus dados
-        sender_email = "seu_email@gmail.com"
-        password = "sua_senha"  # Recomendo usar variáveis de ambiente
+        sender_email = "DIGITA SEU E-MAIL"
+        password = "DIGITA SUA SENHA"
         
         # Criar mensagem
         msg = MIMEMultipart()
@@ -181,7 +181,7 @@ if __name__ == "__main__":
             print("Dados obtidos com sucesso!")
             
             # 2. Configurar diretório de saída
-            output_dir = Path(r"D:\Aulas\Portifolio\WebScraping\Cotacao_do_Dolar")
+            output_dir = Path(r"C:\") #coloque um diretorio
             output_dir.mkdir(parents=True, exist_ok=True)
             
             # 3. Gerar relatório

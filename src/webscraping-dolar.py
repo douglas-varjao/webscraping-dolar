@@ -181,7 +181,7 @@ if __name__ == "__main__":
             print("Dados obtidos com sucesso!")
             
             # 2. Configurar diretório de saída
-            output_dir = Path(r"C:\") #coloque um diretorio
+            output_dir = Path(r"C:\coloca_seu_diretorio")
             output_dir.mkdir(parents=True, exist_ok=True)
             
             # 3. Gerar relatório
